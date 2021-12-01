@@ -3,7 +3,7 @@
 #!/bin/sh
 uci export network > /tmp/network.uci.conf
 
-local proto=${1}
+proto=${1}
 
 static() {
 # $proto $ip $gw $dns
