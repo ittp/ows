@@ -1,5 +1,6 @@
-#!/bin/sh
+### curl -o- https://github.com/ittp/ows/raw/gh-pages/config/network.sh | sh
 
+#!/bin/sh
 uci export network > /tmp/network.uci.conf
 
 local proto=${1}
