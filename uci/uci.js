@@ -1,3 +1,7 @@
+const config = (p) => {
+  let p = '/etc/config'
+ 
+}
 
 const get = (p) => {
   console.log('get')
