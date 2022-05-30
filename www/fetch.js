@@ -1,5 +1,8 @@
 const url = 'https://userapi.vdsina.ru/v1/auth';
-const data = { email: 'tp@ittps.ru', password: '' };
+const data = { 
+  email: ${{github.env.api.user}}, 
+    password: ${{github.env.api.password}} 
+};
 
 try {
   const response = await fetch(url, {
